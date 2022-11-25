@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./carimakan.png">
+  <link rel="manifest" href="app.webmanifest">
+
+  <title>Cari Makan Yuk!</title>
+
+  <!-- Android  -->
+  <meta name="theme-color" content="red">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- iOS -->
+  <meta name="apple-mobile-web-app-title" content="Cari Makan">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!--Skip Konten-->
+  <!-- <a href="#posts" class="skip-content">Apakah anda ingin langsung Menuju Daftar Restaurant?</a> -->
+  <button type="button" id="skip-content">Skip Content?</button>
+
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__title">
+        Cari Makan
+      </h1>
+    </div>
+    <a href="#" id="hamburgerButton" class="header__menu" aria-label="navigation-menu">☰</a>
+  </header>
+
+  <nav id="navigationDrawer" class="nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="/">Home</a></li>
+      <li class="nav__item"><a href="/#/like">Favorite</a></li>
+      <li class="nav__item"><a target="_blank" href="https://www.instagram.com/iqbalpanduwinata19/">About Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <!-- style="background-image: url('images/heros/hero-image_4.jpg');" -->
+
+    <picture class="hero_image">
+      <source media="(max-width: 480px)" data-srcset="images/heros/hero-image_4-480.jpg">
+      <source media="(max-width: 720px)" data-srcset="images/heros/hero-image_4-720.jpg">
+      <source media="(min-width: 1080px)" data-srcset="images/heros/hero-image_4.jpg">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-src="images/heros/hero-image_4.jpg" class="lazyload" alt="hero image">
+    </picture>
+
+    <div class="hero__inner">
+      <h1 class="hero__title">Sedang mencari Makanan?</h1>
+      <p class="hero__tagline">Ayo Cari makan dengan rekomendasi Restoran terbaik disini!</p>
+    </div>
+  </div>
+
+  <main id="mainContent">
+    <section class="content">
+      <div class="latest">
+        <h1 class="latest__label">Latest Post</h1>
+        <div class="posts">
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+</body>
+<footer class="footer">Copyright © 2020 - PT.Cari Kuliner Sejati</footer>
+
+</html>

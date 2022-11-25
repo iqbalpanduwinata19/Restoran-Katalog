@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: #424242;
+}
+
+/*Skip Konten*/
+#skip-content {
+  position: absolute;
+  top: -100px;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: wheat;
+  padding: 13.5px 16px;
+  border-radius: 50px;
+  z-index: 100;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+  text-decoration-line: none;
+}
+
+#skip-content:focus {
+  top: 100px
+}
+
+
+
+/* #skip-content a {
+  min-width: 40px;
+  min-height: 40px;
+  display: inline-block;
+} */
+
+
+/*
+ * Header
+ *
+ */
+
+.header {
+  min-height: 56px;
+  transition: min-height 0.3s;
+  background-color: #C8DBBE;
+}
+
+.header__inner {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 4em;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color: #212121;
+}
+
+.header__menu {
+  font-size: 32px;
+  margin: 10px auto;
+  display: block;
+  width: 30px;
+  text-decoration: none;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+
+/*
+ * Top level navigation
+ */
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #EDE4E0;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 1.3em;
+  text-decoration: none;
+  color: #616161;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+
+/*
+ * Jumbotron
+ */
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+  width: 100%;
+  text-align: center;
+  background-position: center;
+  background-color: green;
+}
+
+.hero_image {
+  width: 100%;
+}
+
+.hero_image img {
+  display: block;
+  height: 380px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.hero__inner {
+  position: absolute;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero__title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.hero__tagline {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+/*
+ * main
+ */
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*
+ * content
+ */
+
+.content {
+  padding: 32px;
+}
+
+
+/*
+ * latest
+ */
+
+.latest {
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.latest__label {
+  font-size: 32px;
+  font-weight: lighter;
+  background-color: #C8DBBE;
+}
+
+.latest__label::after {
+  content: '';
+  margin-top: 16px;
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/*
+ * Judul Pertama
+ */
+.title_first {
+  text-align: center;
+  font-size: 32px;
+  font-weight: lighter;
+  background-color: #C8DBBE;
+}
+
+
+/*
+ * post
+ */
+
+.posts {
+  margin: 32px auto auto;
+  text-align: left;
+}
+
+/*
+ * post item
+ */
+
+.post-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.post-item__content {
+  padding: 16px;
+}
+
+.post-item__thumbnail {
+  width: 100%;
+}
+
+.post-item__rate {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #999;
+
+}
+
+.post-item__rate a {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-block;
+}
+
+.post-item_place {
+  color: red;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.post-item__title {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 16px;
+  transition: 0.3s opacity;
+}
+
+.post-item__title a {
+  text-decoration: none;
+  color: inherit;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-block;
+}
+
+
+.post-item__title:hover {
+  opacity: 0.5;
+}
+
+
+.post-item__description {
+  margin-top: 16px;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+/*
+ * footer
+ */
+
+footer {
+  color: black;
+  background-color: #C8DBBE;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+/* Detail */
+
+
+.detail_restaurant {
+  border-radius: 5px;
+  padding: 5px 50px;
+  margin-top: 5px;
+
+}
+
+.wrapper_restaurant {
+  display: flex;
+  grid-template-columns: 1fr;
+  gap: 18px 16px;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.restaurant__poster {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.restaurant__title {
+  margin: 8px 0px 20px;
+  font-size: 32px;
+  font-weight: lighter;
+  background-color: #C8DBBE;
+  text-align: center;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+  text-decoration: none
+}
+
+
+.restaurant__info h4 {
+  margin: 8px 0;
+}
+
+.restaurant__info p {
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.restaurant__overview {
+  margin: 20px 0;
+}
+
+.restaurant__overview p {
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 45px;
+}
+
+.restaurant_menu {
+  display: flex;
+  padding: 15px;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 8px 0;
+  flex-direction: column;
+}
+
+.restaurant_menu ul {
+  width: 50%;
+}
+
+.restaurant_menu li {
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: circle;
+
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.like:hover {
+  width: 65px;
+  height: 65px;
+  border-radius: 60%;
+  transition: all .3s ease-in-out;
+}
+
+.costumer_blank {
+  margin: 8px 0px 20px;
+  font-size: 15px;
+  font-weight: lighter;
+  background-color: #C8DBBE;
+  text-align: center;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+  text-decoration: none
+}
+
+.costumer_review {
+  display: flex;
+  grid-template-columns: 1fr;
+  gap: 18px 16px;
+  border-radius: 10px;
+}
+
+.img-costumer_review {
+  width: 50px;
+  height: 50px;
+  max-width: 600px;
+  border-radius: 50px;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5)
+}
+
+.costumer_comment p {
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.customer_reviews {
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+}
+
+.restaurant-item__not__found {
+  font-size: medium;
+  text-align: center;
+}
